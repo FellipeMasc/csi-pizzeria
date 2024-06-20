@@ -69,15 +69,6 @@ class Olives(PizzaDecorator):
     def get_cost(self):
         return self.pizza.get_cost() + 0.60
 
-class Mushrooms(PizzaDecorator):
-    def __init__(self, pizza):
-        super().__init__(pizza)
-
-    def get_description(self):
-        return self.pizza.get_description() + ", Cogumelo"
-
-    def get_cost(self):
-        return self.pizza.get_cost() + 1.00
 
 class Onions(PizzaDecorator):
     def __init__(self, pizza):
@@ -109,15 +100,6 @@ class Shrimp(PizzaDecorator):
     def get_cost(self):
         return self.pizza.get_cost() + 10.00
     
-class Eggs(PizzaDecorator):
-    def __init__(self, pizza):
-        super().__init__(pizza)
-
-    def get_description(self):
-        return self.pizza.get_description() + ", Ovos"
-
-    def get_cost(self):
-        return self.pizza.get_cost() + 2.00
     
 class Chicken(PizzaDecorator):
     def __init__(self, pizza):
